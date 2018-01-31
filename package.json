@@ -7,7 +7,8 @@
     "e2e": "protractor test\\e2e\\config\\config.js",
     "postinstall": "webdriver-manager update",
     "pree2e": "start cmd /k \"node_modules\\.bin\\webdriver-manager start\"",
-    "e2e:no-server": "protractor test\\e2e\\config\\config.js"
+    "e2e:no-server": "protractor test\\e2e\\config\\config.js",
+    "e2e:update": "webdriver-manager update"
   },
   "author": "Matsvein Murashka",
   "license": "ISC",

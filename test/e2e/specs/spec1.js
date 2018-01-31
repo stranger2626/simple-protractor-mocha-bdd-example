@@ -41,3 +41,20 @@ describe('I should be able to access menu on epam.com', () => {
         return browser.sleep(10000);
     });
 });
+
+
+const listOfSite = ['http://bash.im/', 'https://www.epam.com/'];
+const listOfTitles = ['Цитатник Рунета', 'EPAM | Software Product Development Services'] 
+
+describe('I wisit multiple sites', ()=> {
+
+    listOfSite.forEach((site) => {
+        it('I should be able to access ' + site, async () => {
+            browser.get(site);
+            let pageTitle = await browser.getTitle();
+            let result = listOfTitles.indexOf(pageTitle);
+            return expect(result).to.not.be.equal(-1)
+        });
+    });
+    
+});
