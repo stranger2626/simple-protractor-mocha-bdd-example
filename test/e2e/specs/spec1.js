@@ -37,16 +37,15 @@ describe('I should be able to access menu on epam.com', () => {
         return expect(elementCount).to.be.equal(4);    
     });
 
-    it('I wait 10 seconds', () => {
-        return browser.sleep(10000);
+    it('I wait 5 seconds', () => {
+        return browser.sleep(5000);
     });
 });
-
 
 const listOfSite = ['http://bash.im/', 'https://www.epam.com/'];
 const listOfTitles = ['Цитатник Рунета', 'EPAM | Software Product Development Services'] 
 
-describe('I wisit multiple sites', ()=> {
+describe('I visit multiple sites', ()=> {
 
     listOfSite.forEach((site) => {
         it('I should be able to access ' + site, async () => {

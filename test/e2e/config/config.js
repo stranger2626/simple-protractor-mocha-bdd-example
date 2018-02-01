@@ -11,12 +11,13 @@ exports.config = {
   capabilities: {
       'browserName': 'chrome'
   },
+  
   baseUrl: 'localhost',
+
   mochaOpts : {
     reporter : 'spec',
     timeout  : 70000
 },
-//   baseUrl: ,
 
   onPrepare: () => {
     browser.ignoreSynchronization = true;
