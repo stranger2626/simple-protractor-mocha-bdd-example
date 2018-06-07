@@ -1,7 +1,5 @@
 
 exports.config = {
-  //removing seleniumAddress will make it so there would be no need to run selenium in a separate window
-  seleniumAddress: 'http://localhost:4444/wd/hub',
 
   framework: 'mocha',
 
