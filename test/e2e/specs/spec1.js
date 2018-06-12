@@ -31,10 +31,10 @@ describe('I should be able to access menu on epam.com', () => {
         return browser.wait(expectedConditionFunction(element), TIMEOUT);
     });
 
-    it('Count of Expanded Menu Sublists should be 4', async () => {
+    it('Count of Expanded Menu Sublists should be 3', async () => {
         let element = elementHelper('Expanded Menu Sublists');
         let elementCount = await element.count();
-        return expect(elementCount).to.be.equal(4);    
+        return expect(elementCount).to.be.equal(3);    
     });
 
     it('I wait 5 seconds', () => {
